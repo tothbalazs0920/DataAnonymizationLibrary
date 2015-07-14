@@ -1,0 +1,11 @@
+C:\Users\Balazs\Documents\Visual Studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\bin\Debug\AnonymizationLibrary.dll.config
+C:\Users\Balazs\Documents\Visual Studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\bin\Debug\AnonymizationLibrary.dll
+C:\Users\Balazs\Documents\Visual Studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\bin\Debug\AnonymizationLibrary.pdb
+C:\Users\Balazs\Documents\Visual Studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\obj\Debug\AnonymizationLibrary.dll
+C:\Users\Balazs\Documents\Visual Studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\obj\Debug\AnonymizationLibrary.pdb
+c:\Users\Balazs\Documents\Visual Studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\bin\Debug\Conbinatorics.dll
+c:\Thesis\AnonymizationLibrary\AnonymizationLibrary\bin\Debug\AnonymizationLibrary.dll.config
+c:\Thesis\AnonymizationLibrary\AnonymizationLibrary\bin\Debug\AnonymizationLibrary.dll
+c:\Thesis\AnonymizationLibrary\AnonymizationLibrary\bin\Debug\AnonymizationLibrary.pdb
+c:\Thesis\AnonymizationLibrary\AnonymizationLibrary\obj\Debug\AnonymizationLibrary.dll
+c:\Thesis\AnonymizationLibrary\AnonymizationLibrary\obj\Debug\AnonymizationLibrary.pdb

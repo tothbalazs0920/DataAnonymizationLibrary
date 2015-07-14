@@ -1,0 +1,5 @@
+C:\Users\Balazs\documents\visual studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\bin\x64\Debug\AnonymizationLibrary.dll.config
+C:\Users\Balazs\documents\visual studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\bin\x64\Debug\AnonymizationLibrary.dll
+C:\Users\Balazs\documents\visual studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\bin\x64\Debug\AnonymizationLibrary.pdb
+C:\Users\Balazs\documents\visual studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\obj\x64\Debug\AnonymizationLibrary.dll
+C:\Users\Balazs\documents\visual studio 2012\Projects\AnonymizationLibrary\AnonymizationLibrary\obj\x64\Debug\AnonymizationLibrary.pdb
