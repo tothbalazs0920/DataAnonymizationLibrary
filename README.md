@@ -15,6 +15,20 @@ Permutation Combined with Generalization
 
 ## Example usage:
 
+In the example usage, I used the adult dataset from the UC Irvine Machine Learning Repository.
+I have chosen this dataset for the example, because it has become the standard
+dataset to compare different kinds of anonymization algorithms.
+The entire adult dataset consists of 32561 records. I removed all records
+that contained null values, since my experimental implementation of the algorithms cannot
+handle null values. After removing the null values, the database consisted of 30161
+records. I considered this database as the public table, and I have randomly selected
+a subset of 2000 records as the dataset of individuals whose discovery in the dataset
+is to be protected against. In the dataset, I used the following attributes as quasiidentiers:
+age, gender, race, work class, salary, martial status, education, occupation,
+native country.
+
+The example datasets can be found in the ExampleData folder.
+
 
 ```csharp
 public class Program
