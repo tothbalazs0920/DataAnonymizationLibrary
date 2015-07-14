@@ -22,19 +22,19 @@ public class Program
             //The first attribute has to be a unique id in the DataTable
             
             DataTable kMondrian = KMondrian();
-            Helper.WriteCsvFile(kMondrian, "data//kMondrian.csv");
+            Helper.WriteCsvFile(kMondrian, "kMondrian.csv");
 
             DataTable mpalm = Mpalm();
-            Helper.WriteCsvFile(mpalm, "data//mpalm.csv");
+            Helper.WriteCsvFile(mpalm, "mpalm.csv");
 
             DataTable bucketization = Bucketization();
-            Helper.WriteCsvFile(bucketization, "data//bucketization.csv");
+            Helper.WriteCsvFile(bucketization, "bucketization.csv");
 
             DataTable oneAttributePerColumnSlicing = OneAttributePerColumnSlicing();
-            Helper.WriteCsvFile(oneAttributePerColumnSlicing, "data//oneAttributePerColumnSlicing.csv");
+            Helper.WriteCsvFile(oneAttributePerColumnSlicing, "oneAttributePerColumnSlicing.csv");
 
             DataTable gap = GeneralizationAndPermutationConbined();
-            Helper.WriteCsvFile(gap, "data//generalizationAndPermutationConbined.csv");
+            Helper.WriteCsvFile(gap, "generalizationAndPermutationConbined.csv");
 
          
         }
@@ -42,8 +42,8 @@ public class Program
 
         public static DataTable Mpalm()
         {
-            DataTable publicTable = Helper.LoadCsv("data//adult.csv");
-            DataTable privateTable = Helper.LoadCsv("data//adultSubset.csv");
+            DataTable publicTable = Helper.LoadCsv("adult.csv");
+            DataTable privateTable = Helper.LoadCsv("adultSubset.csv");
 
             Mpalm mpalm = new Mpalm(publicTable, privateTable, 
                 Helper.CreateAdultQid(), Helper.MakeAdultHierarchies(), 0, 0.5);
@@ -60,7 +60,7 @@ public class Program
         {
             List<int> sa = new List<int>();
             sa.Add(0);
-            DataTable publicTable = Helper.LoadCsv("data//adult.csv");
+            DataTable publicTable = Helper.LoadCsv("adult.csv");
             var bucketization = new Bucketization(publicTable,
                Helper.CreateAdultQid(), Helper.MakeAdultHierarchies(), 4, sa);
             var result = bucketization.Run();
@@ -70,7 +70,7 @@ public class Program
 
         public static DataTable OneAttributePerColumnSlicing()
         {
-            DataTable table = Helper.LoadCsv("data//adult.csv");
+            DataTable table = Helper.LoadCsv("adult.csv");
             var oneAttributePerColumnSlicing = new OneAttributePerColumnSlicing(table,
                Helper.CreateAdultQid() , Helper.MakeAdultHierarchies(), 4);
             var result = oneAttributePerColumnSlicing.Run();
@@ -80,7 +80,7 @@ public class Program
 
         public static DataTable KMondrian()
         {
-            DataTable table = Helper.LoadCsv("data//adult.csv");
+            DataTable table = Helper.LoadCsv("adult.csv");
             var kMondrian = new KMondrian(table, 
                 Helper.CreateAdultQid(), Helper.MakeAdultHierarchies(), 4);
             var result = kMondrian.Run();
@@ -90,8 +90,8 @@ public class Program
         public static DataTable GeneralizationAndPermutationConbined()
         {
 
-            DataTable publicTable = Helper.LoadCsv("data//adult.csv");
-            DataTable privateTable = Helper.LoadCsv("data//adultSubset.csv");
+            DataTable publicTable = Helper.LoadCsv("adult.csv");
+            DataTable privateTable = Helper.LoadCsv("adultSubset.csv");
 
             var gap = new GeneralizationAndPermutationConbined(publicTable, 
                 privateTable, Helper.CreateAdultQid(), Helper.MakeAdultHierarchies(), 0, 0.9, 8);
