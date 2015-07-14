@@ -1,6 +1,7 @@
 # Data Anonymization Library
 
-The library consists of implementations of some data anonymization algorithms in c#.
+The library consists of implementations of some data anonymization algorithms in c# using .NET 4.5.
+Each algorithm return a System.Data.DataTable with the anonymized data.
 
 Generalization based algorithms:
 - K-Mondrian
@@ -13,6 +14,7 @@ Permutation based algorithms:
 Permutation Combined with Generalization 
 
 ## Example usage:
+
 
 ```csharp
 public class Program
