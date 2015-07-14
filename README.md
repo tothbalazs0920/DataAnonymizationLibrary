@@ -12,7 +12,7 @@ Permutation based algorithms:
 
 Permutation Combined with Generalization 
 
-Example usage:
+## Example usage:
 
 ```csharp
 public class Program
