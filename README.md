@@ -13,6 +13,10 @@ Permutation based algorithms:
 
 Permutation Combined with Generalization 
 
+## License
+
+Copyright Balazs Toth 2015.
+
 ## Example usage:
 
 In the example usage, I used the adult dataset from the UC Irvine Machine Learning Repository.
