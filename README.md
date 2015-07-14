@@ -118,7 +118,7 @@ public class Program
     }
 ```
 The Helper class:
-
+The domain generalization hierarchies are builded here.
 ```csharp
 public class Helper
     {
