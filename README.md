@@ -22,7 +22,7 @@ Copyright Balazs Toth 2015.
 A simple example:
 
 ```csharp
-//1. Create a DataTable and load some dummy data.
+            //1. Create a DataTable and load some dummy data.
             DataTable table = new DataTable();
 
             // Right now, the first column has to be a unique index.
@@ -64,7 +64,7 @@ A simple example:
 ```
 Another example:
 
-In the example usage, I used the adult dataset from the UC Irvine Machine Learning Repository.
+In the second example, I used the adult dataset from the UC Irvine Machine Learning Repository.
 I have chosen this dataset for the example, because it has become the standard
 dataset to compare different kinds of anonymization algorithms.
 The entire adult dataset consists of 32561 records. I removed all records
