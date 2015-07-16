@@ -19,6 +19,51 @@ Copyright Balazs Toth 2015.
 
 ## Example usage:
 
+A simple example:
+
+```csharp
+//1. Create a DataTable and load some dummy data.
+            DataTable table = new DataTable();
+
+            // Right now, the first column has to be a unique index.
+            table.Columns.Add("id", typeof(string));
+            table.Columns.Add("gender", typeof(string));
+            table.Columns.Add("zip", typeof(string));
+            
+            table.Rows.Add("0", "male", "1000");
+            table.Rows.Add("1", "male", "1011");
+            table.Rows.Add("2", "male", "1002");
+            table.Rows.Add("3", "female", "1001");
+            table.Rows.Add("4", "female", "1013");
+            table.Rows.Add("5", "female", "1012");
+
+            // 2. Create a list of domain generalization hierarchies.
+            List<AnonymizationLibrary.hierarchies.IHierarchy> hierarchies = new List<IHierarchy>();
+
+            GeneralizationHierarchy gender = new GeneralizationHierarchy(1);
+
+            Dictionary<string, string> genderLevel1 = new Dictionary<string, string>();
+            genderLevel1.Add("male", "*");
+            genderLevel1.Add("female", "*");
+            gender.AddDictionary(genderLevel1);
+
+            hierarchies.Add(gender);
+
+            hierarchies.Add(new AnonymizationLibrary.hierarchies.SupressionHierarchy(2, 4));
+
+            // 3. Create a list of integers that stores the indexies of the quasi-identifier attributes.
+          
+            List<int> qid = new List<int>();
+            qid.Add(1);
+            qid.Add(2);
+
+            // 4. Run the desired algorithm.
+            var kMondrian = new KMondrian(table,
+                qid, hierarchies, 2);
+            var result = kMondrian.Run();
+```
+Another example:
+
 In the example usage, I used the adult dataset from the UC Irvine Machine Learning Repository.
 I have chosen this dataset for the example, because it has become the standard
 dataset to compare different kinds of anonymization algorithms.
@@ -32,7 +77,6 @@ age, gender, race, work class, salary, martial status, education, occupation,
 native country.
 
 The example datasets can be found in the ExampleData folder.
-
 
 ```csharp
 public class Program
